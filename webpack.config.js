@@ -1,6 +1,7 @@
 var path = require('path');
 
 module.exports = {
+  mode: 'production',
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'build'),
@@ -12,16 +13,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /(node_modules)/,
-        include: path.join(__dirname, 'src'),
-        use: [
-          {
-            loader: 'babel-loader',
-            options: {
-              babelrc: false,
-              presets: [['env', { modules: false }], 'react', 'stage-0']
-            }
-          }
-        ]
+        use: 'babel-loader'
       }
     ]
   }
