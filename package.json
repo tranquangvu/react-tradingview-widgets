@@ -1,19 +1,26 @@
 {
   "name": "react-tradingview-widgets",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React tradingview widget components",
+  "license": "MIT",
+  "keywords": [
+    "tradingview",
+    "tradingview widgets",
+    "tradingview widgets react",
+    "tradingview charts react"
+  ],
+  "author": {
+    "name": "tranquangvu",
+    "email": "vutran.513@gmail.com"
+  },
   "main": "build/index.js",
+  "scripts": {
+    "build": "webpack"
+  },
   "peerDependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "prop-types": "^15.6.0"
-  },
-  "scripts": {
-    "build": "webpack"
-  },
-  "author": {
-    "name": "chung phuoc",
-    "email": "onhachungphuoc@gmail.com"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
